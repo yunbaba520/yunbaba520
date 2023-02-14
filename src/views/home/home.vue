@@ -19,5 +19,8 @@ import PageHeader from '@/components/page-header/page-header.vue'
   .el-header {
     padding: 10px 24px;
   }
+  .el-main {
+    background-color: pink;
+  }
 }
 </style>
