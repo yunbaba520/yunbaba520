@@ -4,7 +4,9 @@
       <el-header height="60px">
         <PageHeader></PageHeader>
       </el-header>
-      <el-main>Main</el-main>
+      <el-main>
+        <PageCarousel></PageCarousel>
+      </el-main>
       <el-footer>Footer</el-footer>
     </el-container>
   </div>
@@ -12,6 +14,7 @@
 
 <script setup lang="ts">
 import PageHeader from '@/components/page-header/page-header.vue'
+import PageCarousel from '@/components/page-carousel/page-carousel.vue'
 </script>
 
 <style scoped lang="less">
@@ -20,7 +23,7 @@ import PageHeader from '@/components/page-header/page-header.vue'
     padding: 10px 24px;
   }
   .el-main {
-    background-color: pink;
+    padding: 0;
   }
 }
 </style>
