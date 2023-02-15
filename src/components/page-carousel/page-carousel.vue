@@ -1,6 +1,9 @@
 <template>
   <div class="page-carousel">
-    <el-carousel height="500px">
+    <div class="bg-div">
+      <img class="bg-img" :src="loopImg[currentIndex].img" alt="">
+    </div>
+    <el-carousel height="500px" arrow="never" @change="handlerCarouselChange">
       <el-carousel-item
         class="carousel-item"
         v-for="item in loopImg"
@@ -14,7 +17,8 @@
 
 <script setup lang="ts">
 import { getAssetsFile } from '@/utils/handler-img'
-const loopImg = [
+import { ref } from "vue";
+const loopImg: any[] = [
   {
     id: '1',
     img: getAssetsFile('轮播图1.jpg')
@@ -36,21 +40,26 @@ const loopImg = [
     img: getAssetsFile('轮播图5.jpg')
   }
 ]
+let currentIndex: number = ref(0)
+function handlerCarouselChange(cIndex: number) {
+  currentIndex.value = cIndex
+}
 </script>
 
 <style scoped lang="less">
 .page-carousel {
   position: relative;
-  &::before {
+  .bg-div {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    content: '';
-    filter: blur(80px);
-    background: url(../../assets/img/轮播图1.jpg);
-    z-index: -1;
+    .bg-img {
+      width: 100%;
+      height: 100%;
+      filter: blur(30px);
+    }
   }
   .carousel-item {
     display: flex;
