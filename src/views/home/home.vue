@@ -18,8 +18,8 @@
 <script setup lang="ts">
 import PageHeader from '@/components/page-header/page-header.vue'
 import PageCarousel from '@/components/page-carousel/page-carousel.vue'
-import PageFooter from "@/components/page-footer/page-footer.vue";
-import MainContent from "./cpns/main-content.vue";
+import PageFooter from '@/components/page-footer/page-footer.vue'
+import MainContent from './cpns/main-content.vue'
 </script>
 
 <style scoped lang="less">

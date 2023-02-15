@@ -1,7 +1,7 @@
 <template>
   <div class="page-carousel">
     <div class="bg-div">
-      <img class="bg-img" :src="loopImg[currentIndex].img" alt="">
+      <img class="bg-img" :src="loopImg[currentIndex].img" alt="" />
     </div>
     <el-carousel height="600px" arrow="never" @change="handlerCarouselChange">
       <el-carousel-item
@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import { getAssetsFile } from '@/utils/handler-img'
-import { ref } from "vue";
+import { ref } from 'vue'
 const loopImg: any[] = [
   {
     id: '1',

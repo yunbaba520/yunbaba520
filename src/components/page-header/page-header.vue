@@ -18,9 +18,7 @@
         >
       </router-link>
       <el-icon @click="handlerThemeIconClick" size="25">
-        <component
-          :is="theme === 'light' ? 'Sunny' : 'Moon'"
-        ></component>
+        <component :is="theme === 'light' ? 'Sunny' : 'Moon'"></component>
       </el-icon>
     </div>
   </div>
@@ -33,11 +31,13 @@ const globelStore = useGlobel()
 const { theme } = storeToRefs(globelStore)
 function handlerThemeIconClick() {
   if (theme.value === 'light') {
-    globelStore.changeThemeAction('dark');
-    (document.getElementById('theme') as HTMLLinkElement).href = './css/theme-dark.css'
+    globelStore.changeThemeAction('dark')
+    ;(document.getElementById('theme') as HTMLLinkElement).href =
+      './css/theme-dark.css'
   } else {
-    globelStore.changeThemeAction('light');
-    (document.getElementById('theme') as HTMLLinkElement).href = './css/theme-light.css'
+    globelStore.changeThemeAction('light')
+    ;(document.getElementById('theme') as HTMLLinkElement).href =
+      './css/theme-light.css'
   }
 }
 </script>
@@ -68,7 +68,6 @@ function handlerThemeIconClick() {
       margin-right: 15px;
       font-size: 18px;
       color: var(--theme_text_color);
-
     }
     .active {
       border-bottom: 2px solid #f00;
