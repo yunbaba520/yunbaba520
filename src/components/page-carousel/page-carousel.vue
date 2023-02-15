@@ -55,6 +55,7 @@ function handlerCarouselChange(cIndex: number) {
     left: 0;
     bottom: 0;
     right: 0;
+    overflow: hidden;
     .bg-img {
       width: 100%;
       height: 100%;

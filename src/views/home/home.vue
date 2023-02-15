@@ -6,6 +6,7 @@
       </el-header>
       <el-main>
         <page-carousel></page-carousel>
+        <main-content></main-content>
       </el-main>
       <el-footer>
         <page-footer></page-footer>
@@ -18,7 +19,7 @@
 import PageHeader from '@/components/page-header/page-header.vue'
 import PageCarousel from '@/components/page-carousel/page-carousel.vue'
 import PageFooter from "@/components/page-footer/page-footer.vue";
-
+import MainContent from "./cpns/main-content.vue";
 </script>
 
 <style scoped lang="less">
