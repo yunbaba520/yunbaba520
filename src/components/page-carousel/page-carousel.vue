@@ -40,7 +40,7 @@ const loopImg: any[] = [
     img: getAssetsFile('轮播图5.jpg')
   }
 ]
-let currentIndex: number = ref(0)
+let currentIndex = ref<number>(0)
 function handlerCarouselChange(cIndex: number) {
   currentIndex.value = cIndex
 }
