@@ -21,6 +21,7 @@ import PageCarousel from '@/components/page-carousel/page-carousel.vue'
 
 <style scoped lang="less">
 .home-wrap {
+  background-color: var(--theme_bg_color);
   .el-header {
     padding: 10px 24px;
   }
@@ -28,7 +29,6 @@ import PageCarousel from '@/components/page-carousel/page-carousel.vue'
     padding: 0;
   }
   .el-footer {
-    background-color: var(--theme_bg_color);
     color: var(--theme_text_color);
   }
 }

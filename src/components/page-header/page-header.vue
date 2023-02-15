@@ -44,8 +44,8 @@ function handlerThemeIconClick() {
 
 <style scoped lang="less">
 .page-header-wrap {
-  // padding: 15px 0;
   height: 40px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   .logo {
@@ -58,6 +58,7 @@ function handlerThemeIconClick() {
     span {
       font-size: 22px;
       font-weight: 700;
+      color: var(--theme_text_color);
     }
   }
   .operate {
@@ -66,6 +67,8 @@ function handlerThemeIconClick() {
     span {
       margin-right: 15px;
       font-size: 18px;
+      color: var(--theme_text_color);
+
     }
     .active {
       border-bottom: 2px solid #f00;
@@ -75,6 +78,7 @@ function handlerThemeIconClick() {
     }
     .el-icon {
       cursor: pointer;
+      color: var(--theme_text_color);
     }
   }
 }

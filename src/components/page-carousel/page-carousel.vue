@@ -3,7 +3,7 @@
     <div class="bg-div">
       <img class="bg-img" :src="loopImg[currentIndex].img" alt="">
     </div>
-    <el-carousel height="500px" arrow="never" @change="handlerCarouselChange">
+    <el-carousel height="600px" arrow="never" @change="handlerCarouselChange">
       <el-carousel-item
         class="carousel-item"
         v-for="item in loopImg"
@@ -65,7 +65,7 @@ function handlerCarouselChange(cIndex: number) {
     display: flex;
     justify-content: center;
     .img {
-      height: 500px;
+      height: 600px;
     }
   }
 }
