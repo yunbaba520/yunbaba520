@@ -15,6 +15,8 @@
 <script setup lang="ts">
 import PageHeader from '@/components/page-header/page-header.vue'
 import PageCarousel from '@/components/page-carousel/page-carousel.vue'
+
+
 </script>
 
 <style scoped lang="less">
@@ -24,6 +26,10 @@ import PageCarousel from '@/components/page-carousel/page-carousel.vue'
   }
   .el-main {
     padding: 0;
+  }
+  .el-footer {
+    background-color: var(--theme_bg_color);
+    color: var(--theme_text_color);
   }
 }
 </style>

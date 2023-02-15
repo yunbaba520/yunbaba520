@@ -19,7 +19,7 @@
       </router-link>
       <el-icon @click="handlerThemeIconClick" size="25">
         <component
-          :is="globelStore.isLightTheme ? 'Sunny' : 'Moon'"
+          :is="theme === 'light' ? 'Sunny' : 'Moon'"
         ></component>
       </el-icon>
     </div>
@@ -28,9 +28,17 @@
 
 <script setup lang="ts">
 import useGlobel from '@/stores/globel/globel'
+import { storeToRefs } from 'pinia'
 const globelStore = useGlobel()
+const { theme } = storeToRefs(globelStore)
 function handlerThemeIconClick() {
-  globelStore.changeThemeAction()
+  if (theme.value === 'light') {
+    globelStore.changeThemeAction('dark');
+    (document.getElementById('theme') as HTMLLinkElement).href = './css/theme-dark.css'
+  } else {
+    globelStore.changeThemeAction('light');
+    (document.getElementById('theme') as HTMLLinkElement).href = './css/theme-light.css'
+  }
 }
 </script>
 

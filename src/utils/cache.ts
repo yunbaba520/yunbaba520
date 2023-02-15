@@ -14,8 +14,15 @@ class Cache {
   }
   getCache(key: string) {
     const value = this.storage.getItem(key)
-    if (value) {
-      return JSON.parse(value)
+    // 用户手动修改本地存储，存在报错
+    try {
+      if (value) {
+        return JSON.parse(value)
+      } else {
+        return value
+      }
+    } catch (error) {
+      return value
     }
   }
   removeCache(key: string) {
