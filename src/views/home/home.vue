@@ -2,12 +2,14 @@
   <div class="home-wrap">
     <el-container>
       <el-header height="60px">
-        <PageHeader></PageHeader>
+        <page-header></page-header>
       </el-header>
       <el-main>
-        <PageCarousel></PageCarousel>
+        <page-carousel></page-carousel>
       </el-main>
-      <el-footer>Footer</el-footer>
+      <el-footer>
+        <page-footer></page-footer>
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -15,7 +17,7 @@
 <script setup lang="ts">
 import PageHeader from '@/components/page-header/page-header.vue'
 import PageCarousel from '@/components/page-carousel/page-carousel.vue'
-
+import PageFooter from "@/components/page-footer/page-footer.vue";
 
 </script>
 
@@ -29,7 +31,7 @@ import PageCarousel from '@/components/page-carousel/page-carousel.vue'
     padding: 0;
   }
   .el-footer {
-    color: var(--theme_text_color);
+    padding: 0;
   }
 }
 </style>

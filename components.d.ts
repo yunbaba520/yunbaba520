@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMain: typeof import('element-plus/es')['ElMain']
     PageCarousel: typeof import('./src/components/page-carousel/page-carousel.vue')['default']
+    PageFooter: typeof import('./src/components/page-footer/page-footer.vue')['default']
     PageHeader: typeof import('./src/components/page-header/page-header.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
