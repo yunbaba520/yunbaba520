@@ -4,7 +4,7 @@
       <img :src="getAssetsFile('avatar.jpg')" alt="" />
       <span class="name">灰色と青</span>
       <div class="email">
-        <el-icon size="22px" color="#ffffff"><Message /></el-icon>
+        <el-icon size="22px"><Promotion /></el-icon>
       </div>
     </div>
     <div class="type-area">
@@ -123,11 +123,14 @@ function handlerTypeItemClick(item: ITypeItem) {
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      background-color: var(--footer_text_color);
+      background-color: var(--always_orange_color);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      .el-icon {
+        color: var(--theme_text_color);
+      }
     }
   }
   .type-area {
@@ -136,6 +139,7 @@ function handlerTypeItemClick(item: ITypeItem) {
       text-align: center;
       font-size: 16px;
       font-weight: 700;
+      color: var(--theme_text_color);
     }
     .type-list {
       width: 100%;
@@ -154,6 +158,9 @@ function handlerTypeItemClick(item: ITypeItem) {
         img {
           width: 170px;
           height: 170px;
+        }
+        span {
+          color: var(--theme_text_color);
         }
       }
     }

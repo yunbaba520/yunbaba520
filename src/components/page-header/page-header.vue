@@ -1,6 +1,6 @@
 <template>
   <div class="page-header-wrap">
-    <div class="logo">
+    <div class="logo" @click="handlerLogoClick">
       <img src="../../assets/img/logo.svg" alt="" />
       <span>灰色と青小破站</span>
     </div>
@@ -10,11 +10,18 @@
           >首页</span
         >
       </router-link>
-      <router-link to="/login" v-slot="props">
+      <router-link to="/message" v-slot="props">
         <span
           :class="[props.isActive ? 'active' : 'no-active']"
           @click="props.navigate"
           >留言</span
+        >
+      </router-link>
+      <router-link to="/personal" v-slot="props">
+        <span
+          :class="[props.isActive ? 'active' : 'no-active']"
+          @click="props.navigate"
+          >关于作者</span
         >
       </router-link>
       <el-icon @click="handlerThemeIconClick" size="25">
@@ -25,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import router from '@/router'
 import useGlobel from '@/stores/globel/globel'
 import { storeToRefs } from 'pinia'
 const globelStore = useGlobel()
@@ -40,6 +48,9 @@ function handlerThemeIconClick() {
       './css/theme-light.css'
   }
 }
+function handlerLogoClick() {
+  router.push('/home')
+}
 </script>
 
 <style scoped lang="less">
@@ -51,6 +62,7 @@ function handlerThemeIconClick() {
   .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
     img {
       width: 40px;
       height: 40px;
@@ -70,10 +82,10 @@ function handlerThemeIconClick() {
       color: var(--theme_text_color);
     }
     .active {
-      border-bottom: 2px solid #f00;
+      border-bottom: 2px solid var(--always_orange_color);
     }
     .no-active:hover {
-      border-bottom: 2px solid #f00;
+      border-bottom: 2px solid var(--always_orange_color);
     }
     .el-icon {
       cursor: pointer;

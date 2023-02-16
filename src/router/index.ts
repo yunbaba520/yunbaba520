@@ -12,8 +12,12 @@ const router = createRouter({
       component: () => import('../views/home/home.vue')
     },
     {
-      path: '/login',
-      component: () => import('../views/login/login.vue')
+      path: '/message',
+      component: () => import('../views/message/message.vue')
+    },
+    {
+      path: '/personal',
+      component: () => import('../views/personal/personal.vue')
     },
     {
       path: '/:pathMatch(.*)',

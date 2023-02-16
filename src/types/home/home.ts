@@ -4,6 +4,8 @@ export interface IProjectItem {
   projectTitle: string
   status: string
   job: string
+  github: string
+  access: string
   technology: string
   introduce: string
 }

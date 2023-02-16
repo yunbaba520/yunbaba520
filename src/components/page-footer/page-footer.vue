@@ -12,6 +12,7 @@
   height: 100%;
   background-color: var(--theme_bg_color);
   color: var(--footer_text_color);
+  border-top: 1px solid var(--always_orange_color);
   display: flex;
   justify-content: center;
   align-items: center;
