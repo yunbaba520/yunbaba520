@@ -4,12 +4,12 @@
       <el-header height="60px">
         <page-header></page-header>
       </el-header>
-      <el-main>
+      <!-- <el-main>
         <RouterView></RouterView>
       </el-main>
       <el-footer>
         <page-footer></page-footer>
-      </el-footer>
+      </el-footer> -->
     </el-container>
   </div>
 </template>
@@ -18,8 +18,6 @@
 import { onMounted } from 'vue'
 import useGlobel from './stores/globel/globel'
 import { localCache } from './utils/cache'
-import PageFooter from '@/components/page-footer/page-footer.vue'
-import PageHeader from '@/components/page-header/page-header.vue'
 
 const globelStore = useGlobel()
 onMounted(() => {
