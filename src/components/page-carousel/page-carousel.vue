@@ -34,10 +34,6 @@ const loopImg: any[] = [
   {
     id: '4',
     img: getAssetsFile('轮播图4.jpg')
-  },
-  {
-    id: '5',
-    img: getAssetsFile('轮播图5.jpg')
   }
 ]
 let currentIndex = ref<number>(0)

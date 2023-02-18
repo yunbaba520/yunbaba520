@@ -4,10 +4,10 @@
       <el-header class="p-0" height="58">
         <page-header></page-header>
       </el-header>
-      <!-- <el-main>
+      <el-main class="p-0">
         <RouterView></RouterView>
       </el-main>
-      <el-footer>
+      <!-- <el-footer>
         <page-footer></page-footer>
       </el-footer> -->
     </el-container>

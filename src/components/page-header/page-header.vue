@@ -130,6 +130,8 @@ const navData: any[] = [
 
   /* 修改下拉的背景 */
   #navbarNav {
+    position: absolute;
+    top: 100%;
     width: 100%;
     background-color: var(--theme_bg_color);
     color: #fff;
