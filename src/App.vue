@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <el-container>
-      <el-header height="60px">
+      <el-header class="p-0" height="58">
         <page-header></page-header>
       </el-header>
       <!-- <el-main>
@@ -43,14 +43,5 @@ onMounted(() => {
 <style lang="less" scoped>
 .app {
   background-color: var(--theme_bg_color);
-  .el-header {
-    padding: 10px 24px;
-  }
-  .el-main {
-    padding: 0;
-  }
-  .el-footer {
-    padding: 0;
-  }
 }
 </style>
