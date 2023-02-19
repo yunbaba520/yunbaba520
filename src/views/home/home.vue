@@ -1,7 +1,7 @@
 <template>
   <div class="home-wrap">
     <page-carousel></page-carousel>
-    <!-- <main-content></main-content> -->
+    <main-content></main-content>
   </div>
 </template>
 

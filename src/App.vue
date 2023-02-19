@@ -7,9 +7,9 @@
       <el-main class="p-0">
         <RouterView></RouterView>
       </el-main>
-      <!-- <el-footer>
+      <el-footer>
         <page-footer></page-footer>
-      </el-footer> -->
+      </el-footer>
     </el-container>
   </div>
 </template>

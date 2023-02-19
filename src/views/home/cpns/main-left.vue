@@ -39,9 +39,4 @@ const projectArr: IProjectItem[] = [
 ]
 </script>
 
-<style scoped lang="less">
-.main-left-wrap {
-  width: 980px;
-  margin-right: 20px;
-}
-</style>
+<style scoped lang="less"></style>

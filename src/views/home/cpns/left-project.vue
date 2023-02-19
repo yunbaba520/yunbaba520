@@ -1,6 +1,6 @@
 <template>
-  <div class="left-project-wrap">
-    <img :src="data.img" alt="" />
+  <div class="left-project-wrap mb-3">
+    <img :src="data.img" alt="" class="d-none d-sm-block" />
     <div class="info">
       <div class="job-status">
         <span>{{ data.job }}</span>
@@ -35,7 +35,6 @@ const props = defineProps<IProps>()
   background-color: var(--theme_text_color);
   border: 1px solid var(--theme_text_color);
   color: var(--theme_bg_color);
-  margin-bottom: 20px;
   display: flex;
   img {
     width: 350px;
@@ -60,7 +59,7 @@ const props = defineProps<IProps>()
       a {
         color: var(--theme_bg_color);
       }
-      margin-top: 7px;
+      margin-top: 4px;
       /* 显示一行 */
       text-overflow: ellipsis;
       display: -webkit-box;

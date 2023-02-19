@@ -1,6 +1,6 @@
 <template>
   <div class="main-right-wrap">
-    <div class="author-box">
+    <div class="author-box mx-auto">
       <img :src="getAssetsFile('avatar.jpg')" alt="" />
       <span class="name">灰色と青</span>
       <div class="email">
@@ -16,6 +16,7 @@
             <span>{{ item.title }}</span>
           </div>
         </template>
+        <i /><i /><i /><i /><i /><i /><i />
       </div>
     </div>
   </div>
@@ -99,7 +100,6 @@ function handlerTypeItemClick(item: ITypeItem) {
 
 <style scoped lang="less">
 .main-right-wrap {
-  width: 360px;
   .author-box {
     width: 360px;
     height: 220px;
@@ -162,6 +162,9 @@ function handlerTypeItemClick(item: ITypeItem) {
         span {
           color: var(--theme_text_color);
         }
+      }
+      i {
+        width: 170px;
       }
     }
   }
