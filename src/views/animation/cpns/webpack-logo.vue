@@ -1,6 +1,6 @@
 <template>
   <div class="wabpack-logo-wrap">
-    <div>webpack-logo  css3开发</div>
+    <div>webpack-logo css3开发</div>
     <div class="animation">
       <div class="inner">
         <div class="top"></div>
@@ -42,11 +42,10 @@
       @keyframes innerLoop {
         0% {
           transform: rotateX(-33deg) rotateY(45deg);
-
         }
-        50%, 100% {
+        50%,
+        100% {
           transform: rotateX(-33deg) rotateY(-315deg);
-
         }
       }
       div {
@@ -91,11 +90,10 @@
       @keyframes outerLoop {
         0% {
           transform: rotateX(-33deg) rotateY(45deg);
-
         }
-        50%, 100% {
+        50%,
+        100% {
           transform: rotateX(-33deg) rotateY(405deg);
-
         }
       }
       div {
@@ -127,6 +125,5 @@
       }
     }
   }
-
 }
 </style>
