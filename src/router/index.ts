@@ -20,6 +20,10 @@ const router = createRouter({
       component: () => import('../views/personal/personal.vue')
     },
     {
+      path: '/animation',
+      component: () => import('../views/animation/animation.vue')
+    },
+    {
       path: '/:pathMatch(.*)',
       component: () => import('../views/notFound/not-found.vue')
     }

@@ -76,6 +76,10 @@ const navData: any[] = [
   {
     title: '关于作者',
     link: '/personal'
+  },
+  {
+    title: '动画可视化案例',
+    link: '/animation'
   }
 ]
 </script>
