@@ -4,6 +4,7 @@
     <PlatformDataOne />
     <PlatformAssetsTwo />
     <CanvasSun />
+    <CanvasTime />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import WebpackLogo from './cpns/webpack-logo.vue'
 import PlatformDataOne from './cpns/platform-data-one.vue'
 import PlatformAssetsTwo from './cpns/platform-assets-two.vue'
 import CanvasSun from './cpns/canvas-sun.vue'
+import CanvasTime from './cpns/canvas-time.vue'
 </script>
 
 <style scoped lang="less">
