@@ -3,13 +3,15 @@
     <WebpackLogo />
     <PlatformDataOne />
     <PlatformAssetsTwo />
+    <CanvasSun />
   </div>
 </template>
 
 <script setup lang="ts">
 import WebpackLogo from './cpns/webpack-logo.vue'
 import PlatformDataOne from './cpns/platform-data-one.vue'
-import PlatformAssetsTwo from "./cpns/platform-assets-two.vue";
+import PlatformAssetsTwo from './cpns/platform-assets-two.vue'
+import CanvasSun from './cpns/canvas-sun.vue'
 </script>
 
 <style scoped lang="less">
